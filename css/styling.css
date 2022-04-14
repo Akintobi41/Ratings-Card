@@ -1,0 +1,33 @@
+*{ 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{ 
+    margin:auto;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-component{ 
+    width:300px;
+    height:60vh;
+    padding:1.75rem;
+    position: relative;
+    background-color: hsl(213, 19%, 18%);
+}
+h2{ 
+    color:white;
+}
+.star-cover{ 
+    width:200px;
+    /* height:100px; */
+    padding:.7rem;
+    background: hsl(216, 12%, 54%);
+    opacity:1;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
