@@ -1,26 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> | Rating Card Component</title>
-    <link rel="stylesheet" href="css/styling.css">
-</head>
-<body>
-     
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>| Rating Card Component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styling.css" />
+  </head>
+  <body>
     <main class="main-component">
-        <section class="introduction">
-         <picture class="star-cover"><img src="Images/icon-star.svg" class="star-icon"></picture>
-         <h2>How did we do ?</h2>
+      <section class="introduction">
+        <picture class="star-cover"
+          ><img src="Images/icon-star.svg" class="star-icon"
+        /></picture>
+        <h2>How did we do ?</h2>
+      </section>
+      <section id="response-section" class="alt-component">
+
+        <img src="/Images/illustration-thank-you.svg" class="img" class="hidden-text">
+        <button id="ratings-button" class="hidden-text "> You selected</button>
+        <div>
+        <h3 id="remark-text" class="hidden-text">Thank You</h3>
+        <p id="summary" class="hidden-text">We appreciate you taking time to give a rating.
+        If you ever need more support, don't hesitate to get in touch!</p>
+       </div>
+      </section>
+      <section class="sub-component">
+        <p class="sub-component-text">
+          Please let us know how we did with your 
+          support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+        <p class="sub-component-text-2">
+          We appreciate you taking the time to give a<br />
+          rating. If you ever need more support, don't hesitate to get in touch!
+        </p>
+        <!-- <form> -->
+        <section class="buttons">
+          <button class="interactive-buttons">1</button>
+          <button class="interactive-buttons">2</button>
+          <button class="interactive-buttons">3</button>
+          <button class="interactive-buttons">4</button>
+          <button class="interactive-buttons">5</button>
         </section>
+
+
+        <button type="submit" class="submit-button">
+          <p class="submit-text">SUBMIT</p>
+        </button>
+        <!-- </form> -->
+      </section>
+    </main>
+ 
     
 
+    <script src="/index.js">
+    </script>
+  </body>
 
-    </main>  
-     
-   
-
-
-</body>
-</html>
+  </html>

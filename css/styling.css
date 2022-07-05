@@ -1,33 +1,135 @@
-*{ 
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato',sans-serif;
 }
-body{ 
-    margin:auto;
-    height:100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.main-component{ 
-    width:300px;
-    height:60vh;
-    padding:1.75rem;
-    position: relative;
-    background-color: hsl(213, 19%, 18%);
+.main-component {
+  width: 20.75rem;
+  height: 60vh;
+  padding: 1.5rem;
+  position: relative;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 10px;
 }
-h2{ 
-    color:white;
+h2 {
+  color: white;
+ }
+.introduction {
+  height: 6.25rem;
+  display: flex;
+  /* display: none; */
+  flex-direction: column;
+  justify-content: space-between;
 }
-.star-cover{ 
-    width:200px;
-    /* height:100px; */
-    padding:.7rem;
-    background: hsl(216, 12%, 54%);
-    opacity:1;
-    border-radius:50%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+
+#remark-text{ 
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+#response-section{ 
+  display: none;
+}
+#summary {
+  font-size: .85rem;
+  text-align: center;
+  line-height: 20px;
+  color:  hsl(217, 12%, 63%);
+}
+.alt-component{ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+#ratings-button{ 
+  width: 10rem;
+  height: 2rem;
+  border-radius: 17px;
+  outline: none;
+  border: none;
+background: hsl(217deg 11% 63% / 30%);
+color: hsl(25, 97%, 53%);
+}
+
+.star-cover {
+  width: 3.125rem;
+  padding: 1rem;
+  background: hsl(216, 12%, 54%);
+  opacity: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.interactive-buttons {
+  width: 45px;
+  border-radius: 50%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background-color: #2a333c;
+  color: hsl(217, 12%, 63%);
+}
+.interactive-buttons:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+.interactive-buttons:active {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+.interactive-buttons:focus {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.sub-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70%;
+}
+.submit-button {
+  height: 3rem;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 3px;
+  margin-bottom: -25px;
+}
+.submit-button:active {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+.sub-component-text {
+  color: hsl(217, 12%, 63%);
+  font-size: .92rem;
+  line-height: 20px;
+}
+.sub-component-text-2{ 
+    display: none;
+}
+.submit-button.active .sub-component-text{ 
+     display: none;
+     width:300px;
+     
+}
+button{ 
+  cursor: pointer;
 }
